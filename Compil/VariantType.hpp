@@ -1,8 +1,8 @@
 #pragma once
 
-enum VariantType {
-    vtInt,
-    vtFloat,
-    vtChar,
-    vtString
+enum class VariantType {
+    INTEGER,
+    FLOAT,
+    CHARACTER,
+    STRING
 };

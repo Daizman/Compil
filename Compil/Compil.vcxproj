@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -139,8 +139,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Comment.hpp" />
+    <ClInclude Include="Context.hpp" />
+    <ClInclude Include="Error.hpp" />
+    <ClInclude Include="Identificator.hpp" />
+    <ClInclude Include="IdentificatorType.hpp" />
+    <ClInclude Include="IOModule.hpp" />
+    <ClInclude Include="Lexer.hpp" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Symbol.hpp" />
+    <ClInclude Include="SymbolType.hpp" />
+    <ClInclude Include="SymbolMap.hpp" />
+    <ClInclude Include="Token.hpp" />
+    <ClInclude Include="TokenType.hpp" />
     <ClInclude Include="Variant.hpp" />
     <ClInclude Include="VariantType.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IOModule.cpp" />
+    <ClCompile Include="Lexer.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Compil.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Вопросы.txt" />
+    <Text Include="Заметки и комментарии.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

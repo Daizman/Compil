@@ -13,13 +13,89 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Файлы заголовков\Structures">
+      <UniqueIdentifier>{91dfdbd4-bebb-4230-8e1f-b09a0ba0e7f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Modules">
+      <UniqueIdentifier>{89d4f566-6ca8-4d0f-90b4-23a648397499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Modules">
+      <UniqueIdentifier>{3a4ee0dd-eb85-4bce-9e4d-ca4d19553381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Structures">
+      <UniqueIdentifier>{682da01c-6fa1-49f0-9b51-0d64f195076d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Enums">
+      <UniqueIdentifier>{58e3e692-cb6a-485a-8530-299890c13774}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Variant.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="VariantType.hpp">
+    <ClInclude Include="Token.hpp">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Error.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Context.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="IOModule.hpp">
+      <Filter>Файлы заголовков\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Lexer.hpp">
+      <Filter>Файлы заголовков\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="SymbolMap.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenType.hpp">
+      <Filter>Файлы заголовков\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="VariantType.hpp">
+      <Filter>Файлы заголовков\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Identificator.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="IdentificatorType.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="SymbolType.hpp">
+      <Filter>Файлы заголовков\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Symbol.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Comment.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IOModule.cpp">
+      <Filter>Файлы ресурсов\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Lexer.cpp">
+      <Filter>Файлы ресурсов\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Compil.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Заметки и комментарии.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="Вопросы.txt" />
   </ItemGroup>
 </Project>
