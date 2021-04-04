@@ -3,6 +3,5 @@
 enum class TokenType {
     VARIANT,
     IDENTIFICATOR,
-    OPERAND,
-    COMMENT
+    SYMBOL
 };

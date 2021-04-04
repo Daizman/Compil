@@ -19,29 +19,17 @@
     <Filter Include="Файлы заголовков\Modules">
       <UniqueIdentifier>{89d4f566-6ca8-4d0f-90b4-23a648397499}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Файлы ресурсов\Modules">
-      <UniqueIdentifier>{3a4ee0dd-eb85-4bce-9e4d-ca4d19553381}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Файлы ресурсов\Structures">
-      <UniqueIdentifier>{682da01c-6fa1-49f0-9b51-0d64f195076d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Файлы заголовков\Enums">
       <UniqueIdentifier>{58e3e692-cb6a-485a-8530-299890c13774}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Modules">
+      <UniqueIdentifier>{3a4ee0dd-eb85-4bce-9e4d-ca4d19553381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Structures">
+      <UniqueIdentifier>{682da01c-6fa1-49f0-9b51-0d64f195076d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Variant.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Token.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Error.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Context.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -51,40 +39,70 @@
     <ClInclude Include="Lexer.hpp">
       <Filter>Файлы заголовков\Modules</Filter>
     </ClInclude>
-    <ClInclude Include="SymbolMap.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="TokenType.hpp">
       <Filter>Файлы заголовков\Enums</Filter>
     </ClInclude>
     <ClInclude Include="VariantType.hpp">
       <Filter>Файлы заголовков\Enums</Filter>
     </ClInclude>
-    <ClInclude Include="Identificator.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="IdentificatorType.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="SymbolType.hpp">
       <Filter>Файлы заголовков\Enums</Filter>
     </ClInclude>
-    <ClInclude Include="Symbol.hpp">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="Context.hpp">
+      <Filter>Файлы заголовков\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="Comment.hpp">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="Identificator.hpp">
+      <Filter>Файлы заголовков\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.hpp">
+      <Filter>Файлы заголовков\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="IdentificatorType.hpp">
+      <Filter>Файлы заголовков\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Symbol.hpp">
+      <Filter>Файлы заголовков\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Token.hpp">
+      <Filter>Файлы заголовков\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="SymbolMap.hpp">
+      <Filter>Файлы заголовков\Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="Variant.hpp">
+      <Filter>Файлы заголовков\Structures</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IOModule.cpp">
-      <Filter>Файлы ресурсов\Modules</Filter>
+      <Filter>Исходные файлы\Modules</Filter>
     </ClCompile>
     <ClCompile Include="Lexer.cpp">
-      <Filter>Файлы ресурсов\Modules</Filter>
+      <Filter>Исходные файлы\Modules</Filter>
     </ClCompile>
     <ClCompile Include="Source.cpp">
       <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Context.cpp">
+      <Filter>Исходные файлы\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>Исходные файлы\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Identificator.cpp">
+      <Filter>Исходные файлы\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Symbol.cpp">
+      <Filter>Исходные файлы\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="SymbolMap.cpp">
+      <Filter>Исходные файлы\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Token.cpp">
+      <Filter>Исходные файлы\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Variant.cpp">
+      <Filter>Исходные файлы\Structures</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

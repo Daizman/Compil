@@ -139,7 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Comment.hpp" />
     <ClInclude Include="Context.hpp" />
     <ClInclude Include="Error.hpp" />
     <ClInclude Include="Identificator.hpp" />
@@ -156,9 +155,16 @@
     <ClInclude Include="VariantType.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Context.cpp" />
+    <ClCompile Include="Error.cpp" />
+    <ClCompile Include="Identificator.cpp" />
     <ClCompile Include="IOModule.cpp" />
     <ClCompile Include="Lexer.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Symbol.cpp" />
+    <ClCompile Include="SymbolMap.cpp" />
+    <ClCompile Include="Token.cpp" />
+    <ClCompile Include="Variant.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Compil.rc" />
