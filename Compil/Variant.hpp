@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//пока непонятно зачем он, но оставил тут на всякий
 
 class Variant {
 private:

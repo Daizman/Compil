@@ -2,61 +2,53 @@
 #include "IdentificatorType.hpp"
 #include <string>
 
-using namespace std;
+
+using std::string;
+using std::to_string;
+
 
 class Identificator {
 private:
 	IdentificatorType _type;
+	string _name;
 public:
-	IdentificatorType GetType() { return _type; }
+	IdentificatorType GetType();
 	virtual string ToString() = 0;
-	Identificator(IdentificatorType itype) {
-		_type = itype;
-	}
+	Identificator(IdentificatorType, string);
 };
-// спросить про индентификатор, сделать на основе variant
 
 class IntIdentificator : public Identificator {
 private:
 	int _val;
 public:
-	string ToString() override { return to_string(_val); }
-	int GetValue() { return _val; }
-	IntIdentificator(int val) : Identificator(IdentificatorType::INTEGER) {
-		_val = val;
-	}
+	string ToString() override;
+	int GetValue();
+	IntIdentificator(int, string);
 };
-
 
 class FloatIdentificator : public Identificator {
 private:
 	float _val;
 public:
-	string ToString() override { return to_string(_val); }
-	float GetValue() { return _val; }
-	FloatIdentificator(float val) : Identificator(IdentificatorType::FLOAT) {
-		_val = val;
-	}
+	string ToString() override;
+	float GetValue();
+	FloatIdentificator(float, string);
 };
 
 class CharIdentificator : public Identificator {
 private:
 	char _val;
 public:
-	string ToString() override { return string(1, _val); }
-	char GetValue() { return _val; }
-	CharIdentificator(char val) : Identificator(IdentificatorType::CHARACTER) {
-		_val = val;
-	}
+	string ToString() override;
+	char GetValue();
+	CharIdentificator(char, string);
 };
 
 class StringIdentificator : public Identificator {
 private:
 	string _val;
 public:
-	string ToString() override { return _val; }
-	string GetValue() { return _val; }
-	StringIdentificator(string val) : Identificator(IdentificatorType::STRING) {
-		_val = val;
-	}
+	string ToString() override;
+	string GetValue();
+	StringIdentificator(string, string);
 };

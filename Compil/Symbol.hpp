@@ -3,18 +3,17 @@
 #include <string>
 
 
+using std::string;
+
+
 class Symbol {
 private:
 	static SymbolMap _map;
-	std::string _val;
+	string _val;
 	SymbolType _type;
 public:
-	std::string GetValue() { return _val; }
-	SymbolType GetType() { return _type; }
-	std::string ToString() { return _val; }
-	Symbol(std::string val) {
-		_map = SymbolMap();
-		_val = val;
-		_type = _map.GetSymbol(val);
-	}
+	string GetValue();
+	SymbolType GetType();
+	string ToString();
+	Symbol(string);
 };
